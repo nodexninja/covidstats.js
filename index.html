@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="src/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nodex Stats</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  </head>
+  <body>
+    <div id="root">
+      <nav id="top">
+        <div class="title">
+          <div class="logo">
+            <a class="home" href="#top">
+              Nodex Stats
+            </a>
+          </div>
+        </div>
+        <div class="menu">
+          <a class="navlink" href="#about">
+            About
+          </a>
+          <a class="navlink" href="#covid">
+            Covid
+          </a>
+          <a class="navlink" href="#scratch">
+            Scratch
+          </a>
+          <a class="navlink" href="#github">
+            GitHub
+          </a>
+        </div>
+        <div class="forms">
+          
+        </div>
+      </nav>
+      <section class="column">
+        <div class="heading">Covid</div>
+        <div class="container" id="covid">
+          <input type="text" placeholder="country" class="adjust-self" id="search">
+          <div class="covidinfo">
+            <div id="cases" class="info">Cases</div>
+            <div id="deaths" class="info">Deaths</div>
+            <div id="todaycases" class="info">New Cases</div>
+            <div id="todaydeaths" class="info">New Deaths</div>
+          </div>
+          <button class="MuiButton-containedPrimary MuiButton-root adjust-self" id="submit">Search</button>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
